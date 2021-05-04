@@ -14,11 +14,6 @@ public class Switcher {
     public void electricityOn() {
         System.out.println("Electricity on...");
 
-/*        consumers.forEach(x -> {
-            if(x != null)
-                x.execute();
-        });*/
-
         for (ElectricityConsumer consumer : consumers) {
             if (consumer != null)
                 consumer.execute();
